@@ -24,15 +24,14 @@ from ncatbot.core.element import (
 
 _log = get_log()
 
-config.set_bot_uin("")  # 设置 bot qq 号 (必填)
+config.set_bot_uin("3695868729")  # 设置 bot qq 号 (必填)
 config.set_root("")  # 设置 bot 超级管理员账号 (建议填写)
 config.set_ws_uri("ws://localhost:3001")  # 设置 napcat websocket server 地址
-config.set_token("")  # 设置 token (napcat 服务器的 token)
+config.set_token("114514")  # 设置 token (napcat 服务器的 token)
 
 bot = BotClient()
 
-config = "config.yml"
-loadConfig = jmcomic.JmOption.from_file(config)
+loadConfig = jmcomic.JmOption.from_file("config.yml")
 #如果需要下载，则取消以下注释
 manhua = []
 
@@ -84,4 +83,4 @@ async def on_private_message(msg: PrivateMessage):
 
 
 if __name__ == "__main__":
-    bot.run(reload=False)
+    bot.run(reload=False, enable_webui_interaction=False)

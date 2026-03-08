@@ -1,3 +1,3 @@
-ncatbot
+ncatbot=3.8.8.post7
 jmcomic
 img2pdf

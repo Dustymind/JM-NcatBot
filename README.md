@@ -17,9 +17,15 @@ cd JM-NcatBot
 pip install -r requirements.txt`
 ```
 
-3. 运行
+3. 下载 napcat
 
-启动 Napcat，进入 webui（一般为 `localhost:6099`），添加 websocket Server，host 和 port 选择 `ws://localhost:3001`。
+通过 NapCatQQ-Desktop.exe，选择“我是老手”，然后在组件中进行安装。安装完成后，请将 runtime/NapCatQQ 文件夹移动至根目录并命名为 napcat。
+
+4. 运行
+
+对于 Windows，通过 napcat 文件夹下的 `launcher.bat` 启动 Napcat，进入 webui（一般为 `localhost:6099`），添加 websocket Server，host 和 port 选择 `ws://localhost:3001`。
+
+Linux 用户自行查阅 napcat 官方文档，换用合适的 napcat 文件。
 
 更改 `main.py` 各参数，运行 `python main.py`，接下来按照指示操作。
 
